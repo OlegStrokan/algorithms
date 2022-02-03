@@ -1,7 +1,7 @@
 // Contains duplicate
 
 const containsDuplicate = (nums) => {
-	const mySet = new Set();
+	const mySet = new Set()
 
 	for (const num of nums) {
 		if (mySet.has(num)) {
