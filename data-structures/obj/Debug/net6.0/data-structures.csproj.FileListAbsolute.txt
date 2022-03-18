@@ -1,0 +1,15 @@
+/Users/olehstrokan/React/C#/data-structures/data-structures/bin/Debug/net6.0/data-structures
+/Users/olehstrokan/React/C#/data-structures/data-structures/bin/Debug/net6.0/data-structures.deps.json
+/Users/olehstrokan/React/C#/data-structures/data-structures/bin/Debug/net6.0/data-structures.runtimeconfig.json
+/Users/olehstrokan/React/C#/data-structures/data-structures/bin/Debug/net6.0/data-structures.dll
+/Users/olehstrokan/React/C#/data-structures/data-structures/bin/Debug/net6.0/data-structures.pdb
+/Users/olehstrokan/React/C#/data-structures/data-structures/obj/Debug/net6.0/data-structures.csproj.AssemblyReference.cache
+/Users/olehstrokan/React/C#/data-structures/data-structures/obj/Debug/net6.0/data-structures.GeneratedMSBuildEditorConfig.editorconfig
+/Users/olehstrokan/React/C#/data-structures/data-structures/obj/Debug/net6.0/data-structures.AssemblyInfoInputs.cache
+/Users/olehstrokan/React/C#/data-structures/data-structures/obj/Debug/net6.0/data-structures.AssemblyInfo.cs
+/Users/olehstrokan/React/C#/data-structures/data-structures/obj/Debug/net6.0/data-structures.csproj.CoreCompileInputs.cache
+/Users/olehstrokan/React/C#/data-structures/data-structures/obj/Debug/net6.0/data-structures.dll
+/Users/olehstrokan/React/C#/data-structures/data-structures/obj/Debug/net6.0/refint/data-structures.dll
+/Users/olehstrokan/React/C#/data-structures/data-structures/obj/Debug/net6.0/data-structures.pdb
+/Users/olehstrokan/React/C#/data-structures/data-structures/obj/Debug/net6.0/data-structures.genruntimeconfig.cache
+/Users/olehstrokan/React/C#/data-structures/data-structures/obj/Debug/net6.0/ref/data-structures.dll
