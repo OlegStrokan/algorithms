@@ -1,12 +1,13 @@
 ﻿using System;
 using data_structures;
+using data_structures.files;
 using data_structures.linked_list;
 using Delegate = data_structures.Delegate;
 class Program
 {
     static void Main(string[] args)
     {
-        Human oleh = new Human();
+        /*Human oleh = new Human();
         int age = oleh.Age;
         string name = oleh.GetName;
         oleh.ChangeName = "Tomas" + 1;
@@ -65,7 +66,12 @@ class Program
 
         Events.Account account = new Events.Account(100);
         account.Notify += DisplayMessage;
-        account.Put(20);
+        account.Put(20);*/
+
+        Files file = new Files();
+        file.WriteToGile();
+        file.StreamsRead();
+        file.StreamsWrite();
 
     }
 }

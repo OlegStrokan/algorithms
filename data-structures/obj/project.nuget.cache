@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RuhwH4g4Zx7t2VEZQKhyGJoZnP0vWCRbv+VmLW2KiV2RXFRCbM34djx1x2cKX2XxCS2Qwaf2Psm13+FpIiF4xQ==",
+  "dgSpecHash": "bu6hvHrBPoAjk+RXO0XPXMT3kLhUdnH396fSayjCJic/57vYBX6XtnOBObR6sGl/vBBswzNh16u6Y/F4xzphqA==",
   "success": true,
-  "projectFilePath": "/Users/olehstrokan/React/C#/data-structures/data-structures/data-structures.csproj",
+  "projectFilePath": "/Users/olehstrokan/React/algorithms/data-structures/data-structures.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

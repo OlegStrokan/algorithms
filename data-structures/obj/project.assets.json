@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/olehstrokan/React/C#/data-structures/data-structures/data-structures.csproj",
+      "projectUniqueName": "/Users/olehstrokan/React/algorithms/data-structures/data-structures.csproj",
       "projectName": "data-structures",
-      "projectPath": "/Users/olehstrokan/React/C#/data-structures/data-structures/data-structures.csproj",
+      "projectPath": "/Users/olehstrokan/React/algorithms/data-structures/data-structures.csproj",
       "packagesPath": "/Users/olehstrokan/.nuget/packages/",
-      "outputPath": "/Users/olehstrokan/React/C#/data-structures/data-structures/obj/",
+      "outputPath": "/Users/olehstrokan/React/algorithms/data-structures/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/olehstrokan/.nuget/NuGet/NuGet.Config"
