@@ -3,6 +3,7 @@ using data_structures;
 using data_structures.files;
 using data_structures.linked_list;
 using Delegate = data_structures.Delegate;
+
 class Program
 {
     static void Main(string[] args)
@@ -66,12 +67,23 @@ class Program
 
         Events.Account account = new Events.Account(100);
         account.Notify += DisplayMessage;
-        account.Put(20);*/
+        account.Put(20);
 
         Files file = new Files();
         file.WriteToGile();
         file.StreamsRead();
         file.StreamsWrite();
+        
+     IMovable tom = new MoveClass();
+     tom.Move();
+     */
+
+     Auto auto = new Auto();
+     var messenger = new Messenger<Auto>();
+
+     IUser<int> user1 = new User<int>();
+     IUser<int> user2 = new IntUser();
+
 
     }
 }
