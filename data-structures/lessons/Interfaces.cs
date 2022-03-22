@@ -64,3 +64,50 @@ class IntUser : IUser<int>
 {
     public int Id { get; }
 }
+
+// интерфейс для копирования объектов
+public interface ICloneable
+{
+    object Clone();
+}
+
+
+// класс, от когорого можно создать много копий объектов
+// поверхносное копирование
+public class MessangerClone : ICloneable
+{
+    public int Lenght { get; set; }
+
+    public MessangerClone(int lenght)
+    {
+        Lenght = lenght;
+    }
+
+    public object Clone()
+    {
+        return new MessangerClone(Lenght);
+    }
+}
+
+// глубокое копирование
+
+public class Company
+{
+    public string Name { get; set; }
+    public Company(string name) => Name = name;
+}
+
+public class MessangerDeepClone : ICloneable
+{
+    public string Message { get; set; }
+    public Company Work { get; set; }
+
+    public MessangerDeepClone(string message, Company company)
+    {
+        Message = message;
+        Work = company;
+    }
+
+    public object Clone() => new MessangerDeepClone(Message, new Company(Work.Name));
+    
+}

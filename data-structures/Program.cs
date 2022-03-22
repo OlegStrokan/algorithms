@@ -84,6 +84,11 @@ class Program
      IUser<int> user1 = new User<int>();
      IUser<int> user2 = new IntUser();
 
+     var tom = new MessangerClone(12);
+     var bob = (MessangerClone) tom.Clone();
+     // не затрагиваем длину объекта tom
+     bob.Lenght = 10;
+     
 
     }
 }
