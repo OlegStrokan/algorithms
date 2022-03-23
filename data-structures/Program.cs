@@ -88,8 +88,9 @@ class Program
      var bob = (MessangerClone) tom.Clone();
      // не затрагиваем длину объекта tom
      bob.Lenght = 10;
-     
 
+     IMessengerOut<DeviceMessage> iphone = new DeviceMessanger();
+     Device phone = iphone.WriteMessage("+380931117498");
     }
 }
 

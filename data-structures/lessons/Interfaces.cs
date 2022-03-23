@@ -111,3 +111,44 @@ public class MessangerDeepClone : ICloneable
     public object Clone() => new MessangerDeepClone(Message, new Company(Work.Name));
     
 }
+
+public class Device
+{
+    public string Text { get; set; }
+    public Device(string text) => Text = text;
+}
+public class DeviceMessage : Device
+{
+    public DeviceMessage(string text): base(text) { }
+}
+
+// ковариантные интерфейсы - out
+interface IMessengerOut<out T>
+{
+    T WriteMessage(string text);
+}
+
+
+public class DeviceMessanger : IMessengerOut<DeviceMessage>
+{
+    public DeviceMessage WriteMessage(string text)
+    {
+        return new DeviceMessage($"+420776038763");
+    }
+}
+
+// Контравариантные интерфейсы - in
+
+interface IMessengerIn<in T>
+{
+    void SendMessage(T message);
+}
+
+
+public class SimpleMessanger : IMessengerIn<Device>
+{
+    public void SendMessage(Device device)
+    {
+        Console.WriteLine($"{device.Text}");
+    }
+}
