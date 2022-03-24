@@ -91,6 +91,15 @@ class Program
 
      IMessengerOut<DeviceMessage> iphone = new DeviceMessanger();
      Device phone = iphone.WriteMessage("+380931117498");
+
+     var obj1 = new Explicit();
+     var obj2 = new Implicit();
+     
+     // explicit - явное преобразование
+     int integer1 = (int) obj1;
+
+     // implicit - неявное преобразование
+     int integer2 = obj2;
     }
 }
 
