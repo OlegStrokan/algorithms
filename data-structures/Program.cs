@@ -100,6 +100,9 @@ class Program
 
      // implicit - неявное преобразование
      int integer2 = obj2;
+
+     References references = new References();
+         references.Ref();
     }
 }
 
