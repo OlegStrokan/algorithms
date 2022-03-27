@@ -1,8 +1,6 @@
 ﻿using System;
 using data_structures;
-using data_structures.files;
-using data_structures.linked_list;
-using Delegate = data_structures.Delegate;
+using data_structures.sorts;
 
 class Program
 {
@@ -76,7 +74,6 @@ class Program
         
      IMovable tom = new MoveClass();
      tom.Move();
-     */
 
      Auto auto = new Auto();
      var messenger = new Messenger<Auto>();
@@ -102,7 +99,22 @@ class Program
      int integer2 = obj2;
 
      References references = new References();
-         references.Ref();
+    references.Ref();
+     */
+
+        Search search = new Search();
+
+        int linearResult = search.LinearSearch(2, new int[] {1, 2, 3, 4});
+        int binaryResult = search.BinarySearch(2, new int[] {1, 3, 4, 5});
+
+        Console.WriteLine($"Result from linear search is {linearResult}");
+        Console.WriteLine($"Result from binary search is {binaryResult}");
+
+        Sorts sorts = new Sorts();
+        int[] selectionResult = sorts.SelectionSort(new int[] {7, 2, 32, 1}); Console.WriteLine(selectionResult);
+
+        List<int> quickResult = sorts.QuickSort(new List<int>{2,3,5,1});
+        
+        Console.WriteLine(quickResult);
     }
 }
-

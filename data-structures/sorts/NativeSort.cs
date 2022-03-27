@@ -1,8 +1,8 @@
 namespace data_structures.sorts;
 
-public class NativeSort
+public partial class Sorts
 {
-    public void Sort()
+    public void NativeSort()
     {
         int[] numbers = new int[] {1, 2, 3, 4, 5, 6, 7, 8};
         Array.Sort(numbers);
