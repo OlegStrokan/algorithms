@@ -103,12 +103,14 @@ class Program
      */
 
         Search search = new Search();
+        int[] arr = new int[] {32, 12, 13, 643, 34};
 
-        int linearResult = search.LinearSearch(2, new int[] {1, 2, 3, 4});
-        int binaryResult = search.BinarySearch(2, new int[] {1, 3, 4, 5});
-
+        int linearResult = search.LinearSearch(12, arr);
+        int binaryResult = search.BinarySearch(643, arr);
+        int recursiveBinaryResult = search.RecursiveBinarySearch(arr, 12, 0, arr.Length);
         Console.WriteLine($"Result from linear search is {linearResult}");
         Console.WriteLine($"Result from binary search is {binaryResult}");
+        Console.WriteLine($"Result from recursive binary search is {recursiveBinaryResult}");
 
         Sorts sorts = new Sorts();
         int[] selectionResult = sorts.SelectionSort(new int[] {7, 2, 32, 1}); Console.WriteLine(selectionResult);
@@ -116,5 +118,6 @@ class Program
         List<int> quickResult = sorts.QuickSort(new List<int>{2,3,5,1});
         
         Console.WriteLine(quickResult);
+        
     }
 }

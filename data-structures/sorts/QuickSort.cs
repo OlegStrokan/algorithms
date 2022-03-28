@@ -4,6 +4,7 @@ public partial class Sorts
 {
     public List<int> QuickSort(List<int> list)
     {
+        int count = 0;
         if (list.Count <= 1)
         {
             return list;
@@ -16,6 +17,7 @@ public partial class Sorts
         List<int> greater = new List<int>();
         foreach (int item in list)
         {
+            count += 1;
             if (item == pivotIndex)
             {
                 continue;
@@ -35,5 +37,5 @@ public partial class Sorts
         sorted.Add(pivot);
         sorted.AddRange(QuickSort(greater));
         return sorted;
-    } 
+    }
 }
