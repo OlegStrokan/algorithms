@@ -124,7 +124,7 @@ public class OverrideClass : VirtualClass
         base.Age = 18;
     }
 
-    public override sealed void PrintSealed()
+    public sealed override void PrintSealed()
     {
         Console.WriteLine($"{Age} and {Variable}");
     }

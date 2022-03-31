@@ -9,7 +9,7 @@ public class Country
         Name = name;
     }
 }
-public class LinkedList
+public class MyList
 {
     public static List<string> people = new List<string>() {"Oleh", "Tom"};
     public static List<string> employees = new List<string>(people);
