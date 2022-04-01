@@ -1,6 +1,7 @@
 ﻿using System;
 using data_structures;
 using data_structures.sorts;
+using System.Collections.ObjectModel;
 
 class Program
 {
@@ -118,6 +119,15 @@ class Program
         List<int> quickResult = sorts.QuickSort(new List<int>{2,3,5,1});
         
         Console.WriteLine(quickResult);
-        
+
+        SubscribeCollections subscribe = new SubscribeCollections();
+        var collection = new ObservableCollection<Person>()
+        {
+            new Person("Tom", 22),
+            new Person("Oleh", 20),
+        };
+
+        collection.CollectionChanged += subscribe.People_CollectionChanged;
+
     }
 }
