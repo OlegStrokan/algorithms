@@ -2,6 +2,7 @@
 using data_structures;
 using data_structures.sorts;
 using System.Collections.ObjectModel;
+using data_structures.leetcode;
 
 class Program
 {
@@ -101,7 +102,6 @@ class Program
 
      References references = new References();
     references.Ref();
-     */
 
         Search search = new Search();
         int[] arr = new int[] {32, 12, 13, 643, 34};
@@ -128,6 +128,11 @@ class Program
         };
 
         collection.CollectionChanged += subscribe.People_CollectionChanged;
+     */
+
+        ContainsDuplicate containsDuplicate = new ContainsDuplicate();
+        
+        Console.WriteLine(containsDuplicate.IsContaining(new int[] {1, 3, 2, 1}));
 
     }
 }
