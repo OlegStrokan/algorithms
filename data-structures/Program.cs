@@ -2,6 +2,7 @@
 using data_structures;
 using data_structures.sorts;
 using System.Collections.ObjectModel;
+using data_structures.graph;
 using data_structures.leetcode;
 
 class Program
@@ -128,11 +129,13 @@ class Program
         };
 
         collection.CollectionChanged += subscribe.People_CollectionChanged;
-     */
+
 
         ContainsDuplicate containsDuplicate = new ContainsDuplicate();
         
         Console.WriteLine(containsDuplicate.IsContaining(new int[] {1, 3, 2, 1}));
+ */
 
+        Graph graph = new Graph();
     }
 }
