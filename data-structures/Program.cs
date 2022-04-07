@@ -2,6 +2,7 @@
 using data_structures;
 using data_structures.sorts;
 using System.Collections.ObjectModel;
+using data_structures.data_structures.graph_2;
 using data_structures.graph;
 using data_structures.leetcode;
 
@@ -134,8 +135,61 @@ class Program
         ContainsDuplicate containsDuplicate = new ContainsDuplicate();
         
         Console.WriteLine(containsDuplicate.IsContaining(new int[] {1, 3, 2, 1}));
- */
-
+        
         Graph graph = new Graph();
+        graph.AddVertex("1");
+        graph.AddVertex("2");
+        graph.AddVertex("3");
+        graph.AddEdge("1", "2", 5);
+        graph.AddEdge("1", "3", 1);
+        graph.AddEdge("2", "3", 10);
+        graph.PrintGraph();
+
+        
+ */
+        Graph2 graph2 = new Graph2();
+
+        Vertex2 v1 = new Vertex2(1);
+        Vertex2 v2 = new Vertex2(2);
+        Vertex2 v3 = new Vertex2(3);
+        Vertex2 v4 = new Vertex2(4);
+        Vertex2 v5 = new Vertex2(5);
+        Vertex2 v6 = new Vertex2(6);
+        Vertex2 v7 = new Vertex2(7);
+        
+        graph2.AddVertex(v1);
+        graph2.AddVertex(v2);
+        graph2.AddVertex(v3);
+        graph2.AddVertex(v4);
+        graph2.AddVertex(v5);
+        graph2.AddVertex(v6);
+        graph2.AddVertex(v7);
+        
+        graph2.AddEdge(v1, v2);
+        graph2.AddEdge(v1, v3);
+        graph2.AddEdge(v3, v4);
+        graph2.AddEdge(v2, v5);
+        graph2.AddEdge(v2, v6);
+        graph2.AddEdge(v6, v5);
+        graph2.AddEdge(v5, v6);
+
+        var matrix = graph2.GetMatrix();
+        for (int i = 0; i < graph2.VertexesCount; i++)
+        {
+            Console.Write(i + 1);
+            for (int j = 0; j < graph2.VertexesCount; j++)
+            {
+                Console.Write("|"+ matrix[i,j] + "|");
+            }
+            Console.WriteLine();
+        }
+        Console.WriteLine("----------------------");
+        Console.Write(" ");
+        for (int i = 0; i < graph2.VertexesCount; i++)
+        {
+            Console.Write($"|{ i + 1 }|");
+        }
+
+        Console.ReadLine();
     }
 }

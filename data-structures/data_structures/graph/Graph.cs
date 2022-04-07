@@ -32,7 +32,7 @@ public class Graph
     }
 
     /// Добавление ребра
-    public void AddAge(string firstName, string secondName, int weight)
+    public void AddEdge(string firstName, string secondName, int weight)
     {
         var v1 = FindVertex(firstName);
         var v2 = FindVertex(secondName);
@@ -40,6 +40,19 @@ public class Graph
         {
             v1.AddEdge(v2, weight);
             v2.AddEdge(v1, weight);
+        }
+    }
+
+    public void PrintGraph()
+    {
+        foreach (var v in Vertices)
+        {
+            Console.WriteLine($"Vertex: {v}");
+            foreach (var t in v.Edges)
+            {
+                Console.WriteLine($"Connected vertex: {t.ConnectedVertex}");
+                Console.WriteLine($"Edge weight: {t.EdgeWeight}");
+            }
         }
     }
     
