@@ -3,6 +3,7 @@ using data_structures;
 using data_structures.sorts;
 using System.Collections.ObjectModel;
 using data_structures.data_structures.graph_2;
+using data_structures.data_structures.hash_table;
 using data_structures.graph;
 using data_structures.leetcode;
 
@@ -146,16 +147,15 @@ class Program
         graph.PrintGraph();
 
         
- */
         Graph2 graph2 = new Graph2();
 
-        Vertex2 v1 = new Vertex2(1);
-        Vertex2 v2 = new Vertex2(2);
-        Vertex2 v3 = new Vertex2(3);
-        Vertex2 v4 = new Vertex2(4);
-        Vertex2 v5 = new Vertex2(5);
-        Vertex2 v6 = new Vertex2(6);
-        Vertex2 v7 = new Vertex2(7);
+        Vertex v1 = new Vertex(1);
+        Vertex v2 = new Vertex(2);
+        Vertex v3 = new Vertex(3);
+        Vertex v4 = new Vertex(4);
+        Vertex v5 = new Vertex(5);
+        Vertex v6 = new Vertex(6);
+        Vertex v7 = new Vertex(7);
         
         graph2.AddVertex(v1);
         graph2.AddVertex(v2);
@@ -173,23 +173,53 @@ class Program
         graph2.AddEdge(v6, v5);
         graph2.AddEdge(v5, v6);
 
-        var matrix = graph2.GetMatrix();
+        GetMatrix(graph2);
+        GetVertex(graph2, v1);
+        GetVertex(graph2, v2);
+        GetVertex(graph2, v3);
+        GetVertex(graph2, v4);
+        GetVertex(graph2, v5);
+        GetVertex(graph2, v6);
+        GetVertex(graph2, v7);
+
+        Console.ReadLine();
+    }
+
+    private static void GetVertex(Graph2 graph, Vertex vertex)
+    {
+        Console.Write($"From vertex {vertex.Number} we can go to: ");
+        foreach (var v in graph.GetVertexLists(vertex))
+        {
+            Console.Write(v.Number + ",");
+        }
+        Console.WriteLine();
+    }
+
+    private static void GetMatrix(Graph2 graph2)
+    {
+        int[,] matrix = graph2.GetMatrix();
         for (int i = 0; i < graph2.VertexesCount; i++)
         {
             Console.Write(i + 1);
             for (int j = 0; j < graph2.VertexesCount; j++)
             {
-                Console.Write("|"+ matrix[i,j] + "|");
+                Console.Write("|" + matrix[i, j] + "|");
             }
+
             Console.WriteLine();
         }
+
         Console.WriteLine("----------------------");
         Console.Write(" ");
-        for (int i = 0; i < graph2.VertexesCount; i++)
-        {
-            Console.Write($"|{ i + 1 }|");
-        }
+         */
 
-        Console.ReadLine();
+        HashTable<int> hashTable = new HashTable<int>(100);
+        hashTable.Add(5);
+        hashTable.Add(18);
+        hashTable.Add(777);
+
+        Console.WriteLine(hashTable.Search(6));
+        Console.WriteLine(hashTable.Search(18));
+
     }
 }
