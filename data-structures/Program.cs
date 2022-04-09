@@ -221,5 +221,13 @@ class Program
         Console.WriteLine(hashTable.Search(6));
         Console.WriteLine(hashTable.Search(18));
 
+        
+        Hash<int, string> hash = new Hash<int, string>(100);
+        hash.Add(5, "Tom");
+        hash.Add(18, "Cameron");
+        hash.Add(777, "Jeremy");
+
+        Console.WriteLine(hash.Search(5, "Tom"));
+        Console.WriteLine(hash.Search(19, "Johny"));
     }
 }
