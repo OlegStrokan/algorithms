@@ -257,5 +257,15 @@ class Program
         
         Console.WriteLine(item);
         Console.WriteLine(item2);
+
+
+        LinkedStack<int> linkedStack = new LinkedStack<int>();
+        linkedStack.Push(10);
+        linkedStack.Push(20);
+
+        Console.WriteLine(linkedStack.Peek());
+        Console.WriteLine(linkedStack.Pop());
+        Console.WriteLine(linkedStack.Pop());
+        Console.WriteLine(linkedStack.Peek());
     }
 }

@@ -1,7 +1,9 @@
 
+using System.Collections;
+
 namespace data_structures.data_structures.stack
 {
-    public class MyStack<T>
+    public class MyStack<T>  : ICloneable
     {
         private List<T> items = new List<T>();
 
@@ -11,6 +13,11 @@ namespace data_structures.data_structures.stack
         public void Push(T item)
         {
             items.Add(item);
+        }
+
+        public void Clear()
+        {
+            items.Clear();
         }
 
         public T Pop()
@@ -31,7 +38,6 @@ namespace data_structures.data_structures.stack
         {
             if (!IsEmpty)
             {
-                var item = items.LastOrDefault();
                 return items.LastOrDefault();
             }
             else
@@ -43,6 +49,13 @@ namespace data_structures.data_structures.stack
         public override string ToString()
         {
             return $"Stack with {Count} elements";
+        }
+
+        public object Clone()
+        {
+            var newStack = new MyStack<T>();
+            newStack.items = new List<T>(items);
+            return newStack;
         }
     }
 }
