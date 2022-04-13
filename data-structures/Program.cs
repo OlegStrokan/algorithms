@@ -4,6 +4,8 @@ using data_structures.sorts;
 using System.Collections.ObjectModel;
 using data_structures.data_structures.graph_2;
 using data_structures.data_structures.hash_table;
+using data_structures.data_structures.hash_table._3_variant;
+using data_structures.data_structures.stack;
 using data_structures.graph;
 using data_structures.leetcode;
 
@@ -211,7 +213,7 @@ class Program
 
         Console.WriteLine("----------------------");
         Console.Write(" ");
-         */
+       
 
         HashTable<int> hashTable = new HashTable<int>(100);
         hashTable.Add(5);
@@ -229,5 +231,31 @@ class Program
 
         Console.WriteLine(hash.Search(5, "Tom"));
         Console.WriteLine(hash.Search(19, "Johny"));
+
+        SuperHashTable<int> superHashTable = new SuperHashTable<int>(20);
+        
+        superHashTable.Add(4);
+        superHashTable.Add(10);
+        superHashTable.Add(9);
+        superHashTable.Add(9);
+
+        Console.WriteLine(superHashTable.Search(4));
+        Console.WriteLine(superHashTable.Search(110));
+        Console.WriteLine(superHashTable.Search(9));
+        Console.WriteLine(superHashTable.Search(100)); 
+        
+         */
+
+        MyStack<int> stack = new MyStack<int>();
+        
+        stack.Push(1);
+        stack.Push(2);
+        stack.Push(3);
+
+        var item = stack.Pop();
+        var item2 = stack.Peek();
+        
+        Console.WriteLine(item);
+        Console.WriteLine(item2);
     }
 }
