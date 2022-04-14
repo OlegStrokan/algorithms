@@ -244,7 +244,6 @@ class Program
         Console.WriteLine(superHashTable.Search(9));
         Console.WriteLine(superHashTable.Search(100)); 
         
-         */
 
         MyStack<int> stack = new MyStack<int>();
         
@@ -266,6 +265,27 @@ class Program
         Console.WriteLine(linkedStack.Peek());
         Console.WriteLine(linkedStack.Pop());
         Console.WriteLine(linkedStack.Pop());
+        
         Console.WriteLine(linkedStack.Peek());
+                 */
+
+        ArrayStack<int> arrayStack = new ArrayStack<int>(5);
+        
+        Console.WriteLine(arrayStack.Count);
+        arrayStack.Push(100);
+        Console.WriteLine(arrayStack.Count);
+        arrayStack.Push(200);
+        Console.WriteLine(arrayStack.Count);
+        arrayStack.Push(300);
+        Console.WriteLine(arrayStack.Count);
+        arrayStack.Push(400);
+        Console.WriteLine(arrayStack.Count);
+        arrayStack.Push(500);
+        
+        Console.WriteLine(arrayStack.Peek());
+        Console.WriteLine(arrayStack.Pop());
+        Console.WriteLine(arrayStack.Pop());
+        Console.WriteLine(arrayStack.Pop());
+        Console.WriteLine(arrayStack.Peek());
     }
 }
