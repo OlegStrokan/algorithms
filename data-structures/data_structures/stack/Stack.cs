@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace data_structures.data_structures.stack
 {
-    public class MyStack<T>  : ICloneable
+    public class MyStack<T> : ICloneable
     {
         private List<T> items = new List<T>();
 

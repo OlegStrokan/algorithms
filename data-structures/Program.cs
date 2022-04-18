@@ -2,6 +2,7 @@
 using data_structures;
 using data_structures.sorts;
 using System.Collections.ObjectModel;
+using data_structures.data_structures.DoublyLinkedList;
 using data_structures.data_structures.graph_2;
 using data_structures.data_structures.hash_table;
 using data_structures.data_structures.hash_table._3_variant;
@@ -267,8 +268,7 @@ class Program
         Console.WriteLine(linkedStack.Pop());
         
         Console.WriteLine(linkedStack.Peek());
-                 */
-
+            
         ArrayStack<int> arrayStack = new ArrayStack<int>(5);
         
         Console.WriteLine(arrayStack.Count);
@@ -287,5 +287,27 @@ class Program
         Console.WriteLine(arrayStack.Pop());
         Console.WriteLine(arrayStack.Pop());
         Console.WriteLine(arrayStack.Peek());
+             */
+
+        DoublyLinkedList<int> doublyLinkedList = new DoublyLinkedList<int>();
+        
+        doublyLinkedList.Add(1);
+        doublyLinkedList.Add(2);
+        doublyLinkedList.Add(3);
+        doublyLinkedList.Add(4);
+        doublyLinkedList.Add(5);
+        doublyLinkedList.Delete(3);
+        foreach (var item in doublyLinkedList)
+        {
+            Console.WriteLine(item);
+        }
+        
+        
+
+        var reverse = doublyLinkedList.Reverse();
+        foreach (var item in reverse)
+        {
+            Console.WriteLine(item);
+        }
     }
 }

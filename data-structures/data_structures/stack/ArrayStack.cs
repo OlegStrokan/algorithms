@@ -30,7 +30,7 @@ namespace data_structures.data_structures.stack
             }
             else
             {
-                throw new StackOverflowException("Stack owerflow");
+                throw new StackOverflowException("Stack overflow");
             }
         }
 
