@@ -2,6 +2,7 @@
 using data_structures;
 using data_structures.sorts;
 using System.Collections.ObjectModel;
+using data_structures.data_structures.CircularLinkedList;
 using data_structures.data_structures.DoublyLinkedList;
 using data_structures.data_structures.graph_2;
 using data_structures.data_structures.hash_table;
@@ -287,7 +288,7 @@ class Program
         Console.WriteLine(arrayStack.Pop());
         Console.WriteLine(arrayStack.Pop());
         Console.WriteLine(arrayStack.Peek());
-             */
+    
 
         DoublyLinkedList<int> doublyLinkedList = new DoublyLinkedList<int>();
         
@@ -309,5 +310,21 @@ class Program
         {
             Console.WriteLine(item);
         }
+                 */
+
+        var circularList = new CircularLinkedList<int>();
+        circularList.Add(1);
+        circularList.Add(2);
+        circularList.Add(3);
+        circularList.Add(4);
+        circularList.Add(5);
+        
+        circularList.Delete(4);
+
+        foreach (var item in circularList)
+        {
+            Console.WriteLine(item);
+        }
+
     }
 }
