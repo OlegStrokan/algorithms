@@ -1,8 +1,8 @@
 namespace data_structures.leetcode;
 
-public class ContainsDuplicate
+public static class ContainsDuplicate
 {
-    public bool IsContaining(int[] numbers)
+    public static bool IsContaining(int[] numbers)
     {
         List<int> list = new List<int>();
         foreach (int i in numbers)
