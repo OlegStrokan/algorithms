@@ -1,4 +1,4 @@
-namespace data_structures.leetcode;
+namespace data_structures.leetcode.array;
 
 public static class ContainsDuplicate
 {

@@ -9,7 +9,7 @@ using data_structures.data_structures.hash_table;
 using data_structures.data_structures.hash_table._3_variant;
 using data_structures.data_structures.stack;
 using data_structures.graph;
-using data_structures.leetcode;
+using data_structures.leetcode.array;
 
 class Program
 {
@@ -328,7 +328,7 @@ class Program
 
 
         bool isContaining = ContainsDuplicate.IsContaining(new []{1,2,3});
-        
+        DuplicateZeros.ChangeArray(new []{1,0,2,3,0,7,8});
         
         
     }
