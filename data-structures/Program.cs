@@ -329,7 +329,8 @@ class Program
 
         bool isContaining = ContainsDuplicate.IsContaining(new []{1,2,3});
         DuplicateZeros.ChangeArray(new []{1,0,2,3,0,7,8});
-        
-        
+        int target = BinarySearch.SearchElement(new[] { 1, 2, 3, 4, 5 }, 3);
+        Console.WriteLine(target);
+
     }
 }

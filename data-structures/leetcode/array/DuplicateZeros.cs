@@ -1,6 +1,6 @@
 namespace data_structures.leetcode.array;
 
-public class DuplicateZeros
+public static class DuplicateZeros
 {
     public static void ChangeArray(int[] arr)
     {
