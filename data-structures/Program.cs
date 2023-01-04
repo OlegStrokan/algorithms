@@ -329,8 +329,9 @@ class Program
 
         bool isContaining = ContainsDuplicate.IsContaining(new []{1,2,3});
         DuplicateZeros.ChangeArray(new []{1,0,2,3,0,7,8});
-        int target = BinarySearch.SearchElement(new[] { 1, 2, 3, 4, 5 }, 3);
-        Console.WriteLine(target);
-
+        int target = BinarySearch.SearchElement(new[] { 1, 2, 3, 4, 5 }, 12);
+        int count = MaxConsecutiveOnes.FindMax(new[] { 1, 0, 0, 1, 1, 0 });
+        int evenCount = FindEventNumber.FindNumber(new []{1,444,23,120,20});
+        int[] arr = SquaresSortedArray.SortArray(new[] { -2, 1, 3, 9 });
     }
 }
