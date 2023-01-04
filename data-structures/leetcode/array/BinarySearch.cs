@@ -8,7 +8,7 @@ public static class BinarySearch
        
         
         int first = 0;
-        int last = arr.Length;
+        int last = arr.Length - 1;
 
         while (first <= last)
         {
