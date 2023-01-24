@@ -1,14 +1,4 @@
-﻿using System;
-using data_structures;
-using data_structures.sorts;
-using System.Collections.ObjectModel;
-using data_structures.data_structures.CircularLinkedList;
-using data_structures.data_structures.DoublyLinkedList;
-using data_structures.data_structures.graph_2;
-using data_structures.data_structures.hash_table;
-using data_structures.data_structures.hash_table._3_variant;
-using data_structures.data_structures.stack;
-using data_structures.graph;
+﻿
 using data_structures.leetcode.array;
 
 class Program
@@ -333,5 +323,7 @@ class Program
         int count = MaxConsecutiveOnes.FindMax(new[] { 1, 0, 0, 1, 1, 0 });
         int evenCount = FindEventNumber.FindNumber(new []{1,444,23,120,20});
         int[] arr = SquaresSortedArray.SortArray(new[] { -2, 1, 3, 9 });
+        int newArr = RemoveElement.Remove(new[] {3,2,2,3}, 2);
+        int missingNumber = MissingNumber.ReturnMissingValue(new[] { 3,0,1 });
     }
 }
