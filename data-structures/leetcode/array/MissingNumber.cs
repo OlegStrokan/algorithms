@@ -12,4 +12,17 @@ public static class MissingNumber
 
         return nums.Length;
     }
+
+    public static int ReturnMissingValueXor(int[] nums)
+    {
+        int result = nums.Length;
+
+        for (int i = 0; i < nums.Length; i++)
+        {
+            result ^= nums[i];
+            result ^= i;
+        }
+
+        return result;
+    }
 }
